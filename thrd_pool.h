@@ -23,6 +23,3 @@ void thrdpool_waitdone(thrdpool_t *pool);
 #endif
 
 #endif
-
-
-// 12345
