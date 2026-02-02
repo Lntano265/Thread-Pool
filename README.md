@@ -1,10 +1,12 @@
 # 高性能 C 语言线程池 (High Performance C Thread Pool)
 这是一个基于 C 语言实现的轻量级、高性能线程池。它不依赖 C11 标准库 (<stdatomic.h>)，而是直接使用 GCC/Clang 编译器内置的原子指令 (__sync_* built-ins)，因此具有极佳的移植性（兼容老版本编译器）和执行效率。
 ## 📁 项目文件结构
+```
 main.c: 测试程序，包含并发计数测试和模拟耗时任务。
 thrd_pool.c / thrd_pool.h: 线程池的核心实现与接口定义。
 spinlock.h: 基于原子操作手写的自旋锁实现。
 atomic.h: 封装编译器内置原子操作，替代标准库。
+```
 ## 🚀 编译与运行
 本项目仅依赖 POSIX 线程库 (pthread)。
 1. 编译

@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <pthread.h>
 #include "thrd_pool.h"
-#include "spinlock.h"  // <--- 必须包含这个文件，且确保它在当前目录下
+#include "spinlock.h"  
 
 // 共享资源，用于测试线程安全
 static int g_counter = 0;
