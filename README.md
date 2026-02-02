@@ -9,9 +9,9 @@ atomic.h: 封装编译器内置原子操作，替代标准库。
 本项目仅依赖 POSIX 线程库 (pthread)。
 1. 编译
 使用 GCC 或 Clang 进行编译，需要链接 pthread 库：
-code
-Bash
+```bash
 gcc -o threadpool_test main.c thrd_pool.c -lpthread -O2
+```
 -O2: 开启优化，能更好地发挥内联函数 (inline) 和自旋锁的性能。
 -lpthread: 链接 POSIX 线程库。
 2. 运行
